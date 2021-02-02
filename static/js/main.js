@@ -30,9 +30,9 @@ function ShowAlertBox (){Alert.render('<center>Please turn on <br> your network 
 
 function ReloadPage () 
 {
-    location.reload()
-    // if(!navigator.onLine) {ShowAlertBox ()}
-    // else if (navigator.onLine) {location.reload()}
+   // location.reload()
+   if(!navigator.onLine) {ShowAlertBox ()}
+     else if (navigator.onLine) {location.reload()}
 }
 
 
