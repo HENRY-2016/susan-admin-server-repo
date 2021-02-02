@@ -9,6 +9,19 @@ let greetingsarry =     [
                             " Thank You........."
                         ]
 
+let videintro =     [
+    " Hey Susan,,, thank you for the second chance you have given to me... ",
+    " this is what am feeling to you and ",
+    " i started listening to it every day and ...",
+    " think of you and i ",
+    " *** consider me as jason Derulo ***",
+    " singing and screeming out for you  ...",
+    " Song:: Fight for you ",
+    " Listen to and watch it",
+    " Play it",
+    " Thank You........."
+
+]
 let songlyricsarry =    [
                             " I'm going under and this time I fear there's no one to save me",
                             " This all or nothing really got a way of driving me crazy",
@@ -84,7 +97,20 @@ function StartTypingGreetingText ()
             strings:greetingsarry,
             typeSpeed: 50, 
             loop: true, 
-            backDelay: 1000, 
+            backDelay: 6000, 
+            backSpeed: 30, 
+        }); 
+    }
+} 
+function StartTypingVideoText ()
+{
+    if ($(".video-intro-slider").length == 1) 
+    { 
+        let typed = new Typed(".video-intro-slider", { 
+            strings:videintro,
+            typeSpeed: 50, 
+            loop: true, 
+            backDelay: 6000, 
             backSpeed: 30, 
         }); 
     }
@@ -98,7 +124,7 @@ function StartTypingLyricsText ()
             strings:songlyricsarry,
             typeSpeed: 50, 
             loop: true, 
-            backDelay: 1000, 
+            backDelay: 6000, 
             backSpeed: 25, 
         }); 
     }

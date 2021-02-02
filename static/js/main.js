@@ -30,9 +30,11 @@ function ShowAlertBox (){Alert.render('<center>Please turn on <br> your network 
 
 function ReloadPage () 
 {
-    if(!navigator.onLine) {ShowAlertBox ()}
-    else if (navigator.onLine) {location.reload()}
+    location.reload()
+    // if(!navigator.onLine) {ShowAlertBox ()}
+    // else if (navigator.onLine) {location.reload()}
 }
+
 
 function LoadInterfacePage ()
 {
@@ -47,4 +49,9 @@ function LoadInterfacePage ()
             else if (navigator.onLine) {window.location="interface.html"}
         }
 
+}
+
+function ShowVideoDiv ()
+{ 
+    document.getElementById('video-id').style.display="block"
 }
