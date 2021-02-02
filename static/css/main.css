@@ -55,7 +55,18 @@
     background-color: #a21369;
     border-radius: 10px;
 }
-
+.btn-label-video
+{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    width: 50%;
+    display:block;
+    text-align: center;
+    padding:10px 10px;
+    background-color: black;
+    border-radius: 10px;
+}
 .reload-btn
 {
     color:white;
@@ -88,6 +99,10 @@
     
 }
 
+#video-id
+{
+    display: none;
+}
 
 
 /*=======================================================================================================*/
